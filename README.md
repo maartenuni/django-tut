@@ -19,7 +19,9 @@ Personal invesigation of django
 - In order to start a webserver run e.g. ```python manage.py runserver```. Ignore the migration related warnings for now. Add a portnumber to the arguments in order to run it on a separate port. The server is now running for development, the **runserver** command is not suitable for production.
 
 ## start a django app for your website.
-- In the root folder run the following command, this creates the polls app, ofcourse you can specify a name of your own.
+- In the root folder run the following command, this creates the polls app, ofcourse you can specify a name of your own.  
    ```shell
-   python mangage.py startapp polls
-   ```
+   $python mangage.py startapp polls
+   ```  
+  This command will create a new directory with the name that you chose for your app.
+- add an `urls.py` to the polls folder and `include()` it in `mysite/url.py`.
