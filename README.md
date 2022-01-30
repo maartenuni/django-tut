@@ -25,3 +25,9 @@ Personal invesigation of django
    ```  
   This command will create a new directory with the name that you chose for your app.
 - add an `urls.py` to the polls folder and `include()` it in `mysite/url.py`.
+
+## Edit the settings for the website
+- You can set the backend for the SQL engine (SQLlite) is the default. The settings file is `mysite/settings.py`. The `ENGINE` is `'django.db.sqlite3'`. You can also inspect the INSTALLED_APPS, which contain some django apps. These apps require changes to the database and "cause" the previous warnings about migrations. These warnings are fixed by:  
+    ```console
+    $python mangage.py migrate
+    ```
