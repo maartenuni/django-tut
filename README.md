@@ -18,7 +18,7 @@ Personal invesigation of django
   manage.py file. This first contains settings for your website, the latter is a script to interact with your django project
 - In order to start a webserver run e.g. ```python manage.py runserver```. Ignore the migration related warnings for now. Add a portnumber to the arguments in order to run it on a separate port. The server is now running for development, the **runserver** command is not suitable for production.
 
-## start a django app for your website.
+## Start a django app for your website.
 - In the root folder run the following command, this creates the polls app, ofcourse you can specify a name of your own.  
    ```shell
    $python mangage.py startapp polls
@@ -31,3 +31,11 @@ Personal invesigation of django
     ```console
     $python mangage.py migrate
     ```
+## Change the models
+- Change your **models.py**
+- Run ```python manage.py makemigration``` to create the migrations
+    - You add the created migrations to your version control system
+- run ```python manage.py migrate`` to apply the migrations
+- play with your models by running a python REPL:  
+    ```python manage.py shell```
+- generally you want to implement the ```__str__(self):``` method
