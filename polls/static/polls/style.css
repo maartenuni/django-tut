@@ -3,5 +3,9 @@ li a {
 }
 
 body {
-    background : yellow url("images/background.gif") no-repeat;
+    background-color: lightgray;
+    background-image: url("images/owl-bowler.png");
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
